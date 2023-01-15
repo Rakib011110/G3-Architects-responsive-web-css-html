@@ -922,5 +922,8 @@ li i {
   .products {
     flex-direction: column-reverse;
   }
+  .facts-text {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
