@@ -408,26 +408,28 @@ li > a:only-child:after {
 
   align-items: center;
   justify-content: center;
+  position: relative;
 
   /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .info-img img {
   width: 80%;
-  position: relative;
 }
 
 .year-info {
   background-color: orange;
-  padding: 30px;
+  padding: 40px;
   position: absolute;
-  top: 320%;
+  top: 83%;
   display: block;
   color: white;
 
   /* display: flex; */
   display: block;
   border-radius: 10px;
+}
+.year-info {
 }
 
 .main-container {
