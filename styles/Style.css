@@ -1,15 +1,5 @@
 /*  rooot */
 
-.title {
-  font-size: 5vh;
-  color: orange;
-}
-.btn {
-  background-color: orange;
-  padding: 10px;
-  color: white;
-}
-
 header {
   background: rgba(255, 144, 14, 0.1);
   /* height: 880px; */
@@ -21,7 +11,7 @@ header {
 }
 nav {
   margin: 0 auto;
-  padding: 0;
+  padding: 3px;
   background-color: white;
   box-shadow: 2px 2px 2px 2px rgb(239, 229, 229);
   margin-top: 20px;
@@ -32,7 +22,8 @@ nav {
   display: block;
   padding: 0 30px;
   float: left;
-  font-size: 25px;
+  font: bolder;
+  font-size: 35px;
   font-weight: 700px;
   color: orange;
   line-height: 60px;
@@ -60,6 +51,9 @@ nav ul {
 /* Positioning the navigation items inline */
 nav ul li {
   margin: 0px;
+  border-radius: 10px;
+
+  margin-left: 5px;
   display: inline-block;
   float: left;
   background-color: orange;
@@ -240,6 +234,31 @@ li > a:only-child:after {
 
 /*---------  navar  End------*/
 
+.head-title {
+  font-size: 5vh;
+  color: orange;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.head-text p {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: orange;
+  padding: 15px;
+  font-size: 2vh;
+  /* font-weight: 700px; */
+  margin-top: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
 .head-text {
   display: flex;
   text-align: center;
@@ -259,7 +278,7 @@ li > a:only-child:after {
   padding: 20px;
 }
 .head-img img {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -274,8 +293,21 @@ li > a:only-child:after {
   gap: 20px;
 }
 .fetures-text {
+  width: 90%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.feture-span {
+  color: orange;
+}
+.fetures-info {
+  font-size: 4vh;
+}
+.fetures-info p {
+  font-size: 3vh;
+  color: gray;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
@@ -368,7 +400,9 @@ li > a:only-child:after {
   width: 90%;
   justify-content: center;
   display: flex;
-  gap: 170px;
+  gap: 100px;
+  margin: 0 auto;
+
   align-items: center;
   justify-content: center;
 
@@ -376,7 +410,7 @@ li > a:only-child:after {
 }
 
 .info-img img {
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 
@@ -384,7 +418,9 @@ li > a:only-child:after {
   background-color: orange;
   padding: 20px;
   position: absolute;
-  top: 310%;
+  top: 323%;
+  /* display: flex; */
+  display: block;
   border-radius: 20px;
 }
 
@@ -426,20 +462,21 @@ li > a:only-child:after {
 /* CARDS */
 
 .cards {
-  display: flex;
+  /* display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .card {
-  margin: 20px;
-  padding: 20px;
-  width: 500px;
-  min-height: 200px;
+  margin: 9px;
+  padding: 15px;
+  /* width: 326px; */
+  width: 90%;
+  min-height: 72px;
   display: grid;
-  grid-template-rows: 20px 50px 1fr 50px;
+  grid-template-rows: 0px 29px 1fr 88px;
   border-radius: 10px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
   transition: all 0.2s;
 }
 
@@ -514,13 +551,327 @@ li > a:only-child:after {
   background: radial-gradient(#f588d8, #c0a3e5);
 }
 
+body {
+  margin: 0;
+
+  padding: 0;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  gap: 60px;
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  /* box-shadow: 4px 4px 4px 4px rgb(242, 213, 158); */
+  border: 2px solid orange;
+}
+
+.facts img {
+  width: 100%;
+  height: 157px;
+}
+
+.facts-text {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.containers .facts-card .icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #2c73df;
+}
+
+.containers .facts-card .icon .fa {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 80px;
+
+  color: #fff;
+}
+
+.containers .facts-card .slide {
+  width: 140px;
+  border: 1px solid orange;
+
+  height: 160px;
+
+  transition: 0.5s;
+}
+
+.containers .facts-card .slide.slide1 {
+  position: relative;
+
+  display: flex;
+
+  justify-facts-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: 0.7s;
+
+  transform: translateY(100px);
+}
+
+.containers .facts-card:hover .slide.slide1 {
+  transform: translateY(0px);
+}
+
+.containers .facts-card .slide.slide2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-facts-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  transition: 0.8s;
+
+  transform: translateY(-100px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.containers .facts-card:hover .slide.slide2 {
+  transform: translateY(0);
+}
+
+.containers .facts-card .slide.slide2::after {
+  facts-content: "";
+
+  position: absolute;
+
+  width: 30px;
+
+  height: 4px;
+
+  bottom: 15px;
+
+  left: 50%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: #2c73df;
+}
+
+.containers .facts-card .slide.slide2 .facts-content p {
+  margin: 0;
+
+  padding: 0;
+
+  text-align: center;
+
+  color: #414141;
+}
+
+.containers .facts-card .slide.slide2 .facts-content h3 {
+  margin: 0 0 10px 0;
+
+  padding: 0;
+
+  font-size: 24px;
+
+  text-align: center;
+
+  color: #414141;
+}
+
+/* @media scre (max-width: 600px) {
+} */
+
+@media all and (max-width: 768px) {
+  .facts {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    background-color: #f1f1f1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .facts {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    background-color: #f1f1f1;
+  }
+}
+
 /* RESPONSIVE */
 
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
   .cards {
     justify-content: center;
   }
+} */
+
+.products {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin: 20px;
+  padding: 25px;
+  align-items: center;
+  border-radius: 100px;
+  margin-top: 200px;
+
+  /* width: 1200px; */
+  gap: 60px;
+  box-shadow: 2px 2px 2px 2px rgb(239, 225, 225);
 }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background: #00121b;
+  display: block;
+}
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.footer-items p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer-items h1 {
+  color: #fff;
+}
+
+.border1 {
+  height: 3px;
+  width: 40px;
+  background: #ff9800;
+  color: #ff9800;
+  background-color: #ff9800;
+  border: 0px;
+}
+
+.footer-ul {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+ul a:hover {
+  color: #ff9800;
+}
+
+.footer-ul > li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+li i {
+  margin-right: 20px;
+}
+
+.social-media {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  height: 25px;
+  width: 25px;
+  margin: 20px 10px;
+  padding: 4px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social-media i:hover {
+  transform: scale(1.5);
+}
+
+.footer-bottom {
+  padding: 10px;
+  background: #00121b;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+  .footer-items {
+    width: 100%;
+  }
+}
+
+/* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
+
+/* Thanks to Computer Conversations */
 
 @media (max-width: 600px) {
   .feture-container .box:hover .content {
@@ -542,6 +893,10 @@ li > a:only-child:after {
   }
   .year-info {
     display: none;
+  }
+
+  .products {
+    flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=main.css.map */
