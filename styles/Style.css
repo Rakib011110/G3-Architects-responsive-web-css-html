@@ -1,5 +1,14 @@
 /*  rooot */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: rgba(255, 144, 14, 0.1);
   /* height: 880px; */
@@ -311,15 +320,6 @@ li > a:only-child:after {
 .fetures-info p {
   font-size: 3vh;
   color: gray;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .feture-container {
@@ -785,11 +785,19 @@ body {
   gap: 20px;
   flex-direction: row-reverse;
 }
+
+.extrapart:hover {
+  border: 4px dotted orange;
+}
+
 .extrapart img {
   width: 80%;
 }
+.extrapart img:hover {
+  box-shadow: 1px 1px 2px 2px orange;
+}
 .extrapart h1 {
-  font: 3vh;
+  font: 5vh;
   margin-top: 10px;
   color: orange;
 }
